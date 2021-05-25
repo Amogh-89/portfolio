@@ -445,9 +445,11 @@
               </div>
 
               <div class="email">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=a.haldankar8@gmail.com" target="_blank">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>a.haldankar8@gmail.com</p>
+                </a>
               </div>
 
               <div class="phone">
@@ -456,36 +458,35 @@
                 <p>+91 8655224130</p>
               </div>
 
+              <iframe src="https://maps.google.com/maps?q=Mumbai%20Andheri%20east&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
             </div>
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://mail.google.com/mail/" method="get" target="_blank" class="info">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+                <input type="hidden" name="fs" value="1">
+                <input type="hidden" name="tf" value="cm">
+                <input type="hidden" name="to" value="a.haldankar8@gmail.com">
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="su" id="su" required>
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="body" rows="10" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="form-group">
+                <br>
+                <div class="text-center"><button type="submit" class="btn btn-outline-info btn-lg">Send Message</button></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -518,7 +519,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
